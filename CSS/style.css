@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    --bgColor: #7d8e95;
+    --primary: #fbe0c3;
+    --secondary: #ffbb98;
+    --main: #344648;
+}
+body{
+    margin: 0;
+    font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+}
+a {
+    text-transform:uppercase;
+    text-decoration: none;
+    color: var(--default);
+    cursor: pointer;
+}
+nav{
+    width: 20%;
+    height: 100%;
+    background-color: var(--main);
+    text-transform: uppercase;
+    float: left;
+    position: fixed;
+    top: 0;
+    font-family: 'Rowdies', cursive;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+    padding: 1rem;
+}
+ul{
+    list-style-type: none;
+    line-height: 3;
+}
+/* Index page container */
+#container{
+    float: right;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+}
+.accordion{
+    margin: 20vh auto;
+    width: 50%;
+    background-color: var(--bgColor);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.accordion > ul{
+    list-style-type: "\1F44D";
+}
+.accordion > li{
+    text-transform: uppercase;
+}
+.accordion-detail{
+    text-transform: uppercase;
+    position: relative;
+}
+h1{
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: relative;
+}
+h1::before{
+    content: "+";
+    position: absolute;
+    right: 1rem;
+}
+.accordion .accordion-detail.active .sec{
+    display: block;
+}
+.accordion .accordion-detail.active h1::before{
+    content: "-";
+}
+
+.sec{
+    display: none;
+    transition: all 0.5s;
+}
+
+.container{
+    padding: 5rem;
+    margin: auto;
+    height: 100vh;
+    width: 30%;
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 100%;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    font-family: 'Space Grotesk', monospace;
+    font-style: bolder;
+    border-radius: 1rem;
+    border: none;
+}
+button{
+    margin: auto;
+    width: 50%;
+    padding: 0.5rem 1rem;
+    font-family: 'Titillium Web', Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    background-color: var(--secondary);
+    color: var(--main);
+    border: 0;
+}
+.flex{
+    display: flex;
+    flex-wrap: row wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.fa-books{
+    font-size: 2.5rem;
+    color: var(--default);
+}
+footer{
+    margin-top: 10vh;
+    text-align: center;
+}
