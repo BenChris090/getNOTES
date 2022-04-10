@@ -5,3 +5,6 @@ for (i=0; i<accordion.length; i++) {
     this.classList.toggle('active')
   })
 }
+
+// LOGIN Authentification:
+let loginB = document.getElementById("login")

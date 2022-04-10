@@ -86,8 +86,8 @@ h1::before{
 
 .container{
     padding: 5rem;
-    margin: auto;
-    height: 100vh;
+    margin: 5vh auto;
+    height: 90vh;
     width: 30%;
     background-color: var(--bgColor);
     display: flex;
@@ -97,12 +97,17 @@ h1::before{
 }
 input{
     width: 100%;
-    padding: 1.5rem;
+    padding: 1rem;
     margin: 1rem auto;
     font-family: 'Space Grotesk', monospace;
     font-style: bolder;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border: none;
+    text-transform: uppercase;
+}
+input[type=file]{
+    border: solid var(--primary) !important;
+
 }
 button{
     margin: auto;
@@ -116,6 +121,23 @@ button{
     background-color: var(--secondary);
     color: var(--main);
     border: 0;
+}
+select{
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Space Grotesk', monospace;
+    border-radius: 0.5rem;
+}
+fieldset{
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+legend{
+    font-size: 1.5rem;
 }
 .flex{
     display: flex;

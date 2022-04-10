@@ -21,9 +21,9 @@
     <nav>
         <ul>
             <hr>
-            <li><a href="index.html"> get notes</a></li>
+            <li><a href="index.html">get notes</a></li>
             <hr>
-            <li><a href="upload.html">upload new note(s)</a></li>
+            <li><a href="#">upload new note(s)</a></li>
             <hr>
             <br>
             <br>
@@ -36,43 +36,20 @@
     <!-- NAV ends here -->
     
     <div id="container">
-        <div class="accordion">
-            <div class="accordion-detail">
-                <hr>
-                <h1>Computer Engineering</h1>
-                <hr>
-                <ul class="sec">
-                    <li>cpe501: Introduction to AI</li>
-                    <li>cpe501: Introduction to AI</li>
-                    <li>cpe501: Introduction to AI</li>
-                    <li>cpe501: Introduction to AI</li>
-                    <li>cpe501: Introduction to AI</li>
-                </ul>
-            </div>
-            <div class="accordion-detail">
-                <hr>
-                <h1>Electrical & Electronics Engineering</h1>
-                <hr>
-                <ul class="sec">
-                    <li>cpe501: Introduction to AI</li>
-                    <li>cpe501: Introduction to AI</li>
-                    <li>cpe501: Introduction to AI</li>
-                    <li>cpe501: Introduction to AI</li>
-                    <li>cpe501: Introduction to AI</li>
-                </ul>
-            </div>
-            <div class="accordion-detail">
-                <hr>
-                <h1>Others (Assignments, Notes etc)</h1>
-                <hr>
-                <ul class="sec">
-                    <li>cpe501: Introduction to AI</li>
-                    <li>cpe501: Introduction to AI</li>
-                    <li>cpe501: Introduction to AI</li>
-                    <li>cpe501: Introduction to AI</li>
-                    <li>cpe501: Introduction to AI</li>
-                </ul>
-            </div>
+        <div class="container">
+            <fieldset>
+                <legend>Note Upload:</legend>
+                    <label for="category">Category:</label>
+                    <select>
+                        <option selected>Choose Note Category</option>
+                        <option>Electrical & Electronics Engineering</option>
+                        <option>Computer Engineering</option>
+                    </select>
+                    <input type="file" id="doc" accept="doc/pdf/docx/pptx/ppt/pptm" required>
+                    <input type="text" id="courseCode" placeholder="Course Code" min="6" max="7" required>
+                    <input type="text" id="noteTitle" placeholder="Title of Note">
+                    <button>UPLOAD</button>
+            </fieldset>
         </div>
         
 
