@@ -25,15 +25,18 @@ nav{
     position: fixed;
     top: 0;
     font-family: 'Rowdies', cursive;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     color: var(--primary);
     padding: 1rem;
+    z-index: 999;
 }
 ul{
+    width: 100%;
     list-style-type: none;
     line-height: 3;
+    padding: 0;
 }
 /* Index page container */
 #container{
@@ -103,7 +106,6 @@ input{
     font-style: bolder;
     border-radius: 0.5rem;
     border: none;
-    text-transform: uppercase;
 }
 input[type=file]{
     border: solid var(--primary) !important;
@@ -145,6 +147,13 @@ legend{
     gap: 50px;
     justify-content: center;
 }
+.flexCol{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: row wrap;
+    justify-content: center;
+}
 .fa-books{
     font-size: 2.5rem;
     color: var(--default);
@@ -152,4 +161,33 @@ legend{
 footer{
     margin-top: 10vh;
     text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    nav{
+        display: none;
+    }
+    #mNav{
+        width: 50%;
+        height: 100%;
+        top: auto;
+        font-family: 'Rowdies', cursive;
+        font-size: 1rem;
+        display: flex;
+        align-items:baseline;
+        color: var(--primary);
+        padding-inline: 0.5rem;
+        display: none;
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+    .fa-bars, .fa-xmark{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    #hideIcon{
+        display: none;
+    }
 }
